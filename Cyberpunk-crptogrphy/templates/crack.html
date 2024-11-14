@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hash Cracking</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Hash Cracking</h1>
+        <input id="crack-hash" type="text" placeholder="Enter hash to crack">
+        <button onclick="crackHash()">Crack Hash</button>
+        <p id="crack-result"></p>
+        <a href="{{ url_for('index') }}" class="btn">Back to Home</a>
+    </div>
+    <script src="{{ url_for('static', filename='app.js') }}"></script>
+</body>
+</html>

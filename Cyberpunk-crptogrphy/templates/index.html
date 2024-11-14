@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>crptogrphy Tool - Home</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to Cyberpunk crptogrphy Tool</h1>
+        <p>Select an operation:</p>
+        <a href="{{ url_for('hash_page') }}" class="btn">Hash Functions</a>
+        <a href="{{ url_for('base64_page') }}" class="btn">Base64 Encode/Decode</a>
+        <a href="{{ url_for('crack_page') }}" class="btn"></a>
+    </div>
+</body>
+</html>
